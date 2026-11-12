@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Gün: CSS Temelleri | MTA Atölyesi</title>
+    <!-- link etiketi ile aynı dosyada bulunan bir css e bagliyoruz -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- üst başlık header ksımı -->
+    <header class="ust-alan">
+        <h1>Web Geliştirme Eğitimine Hoş Geldiniz</h1>
+        <p>2. Ders: CSS ile Sayfa Tasarımı, Kutu Modeli ve Flexbox</p>
+    </header>
+
+    <!-- ana içerik taşıyıcısı sayfayı ortalayabilmekk için -->
+    <main class="kapsayici">
+
+        <!-- bilgi kartı -->
+        <section class="kart">
+            <h2>CSS Nedir?</h2>
+            <p>
+                CSS (Cascading Style Sheets), HTML ile oluşturduğumuz iskelete renk, yazı tipi, 
+                boşluk ve yerleşim düzeni kazandıran stil dilidir.
+            </p>
+            <a href="https://github.com" target="_blank" class="buton">GitHub Ders Notları</a>
+        </section>
+
+        <!-- flexbox yanyana kutu örneği -->
+        <section class="yan-yana-alan">
+            <div class="kart kutu">
+                <h3>Öğreneceğimiz Teknolojiler</h3>
+                <ul>
+                    <li>HTML5 (İskelet)</li>
+                    <li>CSS3 (Tasarım)</li>
+                    <li>PHP (Sunucu Taraflı Programlama)</li>
+                </ul>
+            </div>
+
+            <div class="kart kutu">
+                <h3>Çalışma Adımları</h3>
+                <ol>
+                    <li><code>style.css</code> dosyasını oluştur</li>
+                    <li>HTML içine <code>&lt;link&gt;</code> ile bağla</li>
+                    <li>Seçicilerle stilleri uygula</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- table -->
+        <section class="kart">
+            <h3>Haftalık Ders Programı</h3>
+            <table class="ders-tablosu">
+                <thead>
+                    <tr>
+                        <th>Hafta</th>
+                        <th>Gün</th>
+                        <th>Konu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Hafta</td>
+                        <td>1. Gün</td>
+                        <td>HTML Temelleri</td>
+                    </tr>
+                    <tr>
+                        <td>1. Hafta</td>
+                        <td>2. Gün</td>
+                        <td>CSS Temelleri</td>
+                    </tr>
+                    <tr>
+                        <td>2. Hafta</td>
+                        <td>1-2. Gün</td>
+                        <td>PHP Temelleri ve Formlar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- footer kısmı yani alt bilgi alanı div ile yapılır -->
+    <footer class="alt-alan">
+        <p>MTA Atölyesi — Web Geliştirme & PHP Eğitimi</p>
+    </footer>
+
+</body>
+</html>
