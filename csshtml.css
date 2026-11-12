@@ -1,0 +1,105 @@
+/* 1. GENEL SIFIRLAMA VE YAZI TİPİ (Etiket Seçici) */
+* {
+    box-sizing: border-box; /* Padding ve border değerlerinin kutu genişliğini bozmasını engeller */
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9; /* Açık gri arka plan */
+    color: #333333;            /* Koyu gri okunabilir metin rengi */
+    line-height: 1.6;
+}
+
+/* 2. ÜST BAŞLIK ALANI (Sınıf Seçici - Class) */
+.ust-alan {
+    background-color: #1e293b; /* Koyu lacivert arka plan */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;        /* İç boşluk: Üst-alt 40px, sağ-sol 20px */
+}
+
+.ust-alan h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+}
+
+.ust-alan p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+/* 3. SAYFA ORTALAMA KAPSAYICISI */
+.kapsayici {
+    max-width: 900px;          /* İçeriğin çok geniş ekranlarda yayılmasını önler */
+    margin: 30px auto;         /* Üst-alt 30px boşluk, sağ-sol 'auto' ile yatay ortalama */
+    padding: 0 20px;
+}
+
+/* 4. KART TASARIMI (Box Model: margin, padding, border, border-radius) */
+.kart {
+    background-color: #ffffff;
+    padding: 25px;             /* İç boşluk */
+    margin-bottom: 20px;       /* Alt dış boşluk */
+    border: 1px solid #e2e8f0; /* İnce çerçeve */
+    border-radius: 8px;        /* Yuvarlatılmış köşeler */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Hafif gölge */
+}
+
+.kart h2, .kart h3 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+/* 5. FLEXBOX İLE YAN YANA YERLEŞİM */
+.yan-yana-alan {
+    display: flex;             /* İçindeki kutuları yan yana dizer */
+    gap: 20px;                 /* İki kutu arasına 20px boşluk koyar */
+}
+
+.kutu {
+    flex: 1;                   /* İki kutunun eşit genişlikte olmasını sağlar */
+}
+
+/* 6. BUTON TASARIMI VE HOVER (Üzerine Gelme) EFEKTİ */
+.buton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;     /* Link alt çizgisini kaldırır */
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.buton:hover {
+    background-color: #1d4ed8; /* Fare üzerine gelince koyulaşır */
+}
+
+/* 7. MODERN TABLO STİLİ */
+.ders-tablosu {
+    width: 100%;
+    border-collapse: collapse; /* Çift kenarlık çizgilerini birleştirir */
+    margin-top: 10px;
+}
+
+.ders-tablosu th,
+.ders-tablosu td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.ders-tablosu th {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* 8. ALT BİLGİ ALANI */
+.alt-alan {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
