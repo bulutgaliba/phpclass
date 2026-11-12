@@ -1,0 +1,80 @@
+<!-- bu örnek form çalişması php eğitimini daha iyi anlamanıza yardımcı olacaktır........ -->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elemanları //  MTA TTO KAYİT </title>
+</head>
+<body>
+
+    <h1>Atölye Kayıt ve İletişim Formu</h1>
+    <p>Not: Form elemanlarındaki <strong>name</strong> özelliği, 2. haftada PHP ile verileri yakalamamızı sağlayacak.</p>
+
+    <hr>
+
+    <!-- action: Verinin gönderileceği sayfa method Gönderim yöntemi (GET veya POST) -->
+    <form action="#" method="POST">
+
+        <!-- Metin Kutusu -->
+        <p>
+            <label for="ad_soyad">Adınız Soyadınız:</label><br>
+            <input type="text" id="ad_soyad" name="ad_soyad" placeholder="Örn: Ahmet Yılmaz" required>
+        </p>
+
+        <!-- e-posta Kutusu -->
+        <p>
+            <label for="eposta">E-posta Adresiniz:</label><br>
+            <input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com" required>
+        </p>
+
+        <!-- sifre Kutusu -->
+        <p>
+            <label for="sifre">Şifre Oluşturun:</label><br>
+            <input type="password" id="sifre" name="sifre" required>
+        </p>
+
+        <!-- acılır liste (select) -->
+        <p>
+            <label for="seviye">Yazılım Bilginiz:</label><br>
+            <select id="seviye" name="seviye">
+                <option value="baslangic">Yeni Başlıyorum</option>
+                <option value="orta">Temel Bilgim Var</option>
+                <option value="ileri">Proje Geliştirdim</option>
+            </select>
+        </p>
+
+        <!-- radyo butonları (tek Seçim) -->
+        <p>
+            Katılım Şekli:<br>
+            <input type="radio" id="orgun" name="katilim" value="orgun" checked>
+            <label for="orgun">Atölyede Yüz Yüze</label><br>
+            
+            <input type="radio" id="online" name="katilim" value="online">
+            <label for="online">Çevrimiçi</label>
+        </p>
+
+        <!-- coklu metin Alanı (textarea) -->
+        <p>
+            <label for="not">Eğitimden Beklentiniz:</label><br>
+            <textarea id="not" name="not" rows="4" cols="35" placeholder="Kısaca yazabilirsiniz..."></textarea>
+        </p>
+
+        <!-- onay kutusu (checkbox) -->
+        <p>
+            <input type="checkbox" id="onay" name="onay" required>
+            <label for="onay">Katılım kurallarını okudum, kabul ediyorum.</label>
+        </p>
+
+        <!-- gönder ve temizle butonları -->
+        <button type="submit">Kaydı Tamamla</button>
+        <button type="reset">Formu Temizle</button>
+
+    </form>
+
+    <hr>
+    <p>👈 <a href="index.html">Ana Sayfaya Dön</a></p>
+
+</body>
+</html>
