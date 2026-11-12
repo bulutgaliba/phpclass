@@ -4,7 +4,7 @@ Bu depo, **MTA Atölyesi** kapsamında düzenlenen **Web Geliştirme ve PHP Teme
 
 
 Eğitim Programı Özeti
-* **Süre:** 2 Hafta (Haftada 2 Gün, Günde 2 Saat — Toplam 8 Saat)
+* **Süre:** 2 Hafta 
 * **Eğitmen:** Veysel Bulut
 * **Sertifikasyon:** Eğitimi tamamlayan katılımcılara **Teknoloji Transfer Ofisi (TTO)** tarafından katılım belgesi verilecektir.
 
@@ -21,7 +21,7 @@ Haftalık Müfredat ve Ders İçerikleri
 
 ---
 
- Bilgisayarda Çalıştırma (Kurulum)
+ Bilgisayarda Çalıştırma 
 1. **1. Hafta (HTML/CSS):** İlgili klasördeki `.html` dosyalarına çift tıklayarak doğrudan tarayıcıda açabilirsiniz.
 2. **2. Hafta (PHP):**
    * Bilgisayarınıza **XAMPP** veya **Laragon** kurun ve Apache sunucusunu başlatın.
